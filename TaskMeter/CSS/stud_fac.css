@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent), url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cictstaldexlogo
+{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+}
+
+.navigationbar 
+{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #f9f9fa;
+    position: sticky;
+}
+
+nav
+{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 35px;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: #363853;
+    font-size: 15pt;
+    position: relative;
+}
+
+nav ul li a::after
+{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #363853;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after
+{
+    width: 50%;
+}
+
+#container_loginpagechooseuser header
+{
+    font-size: 30px;
+    font-weight: 600;
+    color: #363853;
+    position: relative;
+    top: 0px;
+    display: flex;
+}
+
+#container_loginpagechooseuser
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15%;
+    max-width: 500px;
+    width: 100%;
+    height: 50%;
+    background: #f9f9fa;
+    border-radius: 6px;
+    padding: 40px 20px 40px 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.CICTSTALDEXusers
+{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+
+}
+.CICTSTALDEXusers .chooseuserbtn
+{
+
+    height: 50px;
+    width: 300px;
+    border: none;
+    outline: none;
+    color: #f9f9fa;
+    border-radius: 50px;
+    background-color: #363853;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    font-size: 14pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.219);
+}
+
+.chooseuserbtn:hover
+{
+    background-color: #404bda;
+}
+
+.chooseuserbtn_text
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #f9f9fa;
+}
+

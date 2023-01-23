@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    background-color: #f5f8ff;
+    margin: 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.cardheader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+
+h1 {
+    text-align: center;
+    color: #363853;
+    
+}
+
+.leftside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Bck {
+    color: #363853;
+    font-size: 28px;
+    height: max-content;
+    width: fit-content;
+    cursor: pointer;
+    background-color: #F5F8FF;
+    border: none;
+     height: fit-content;
+    border-radius: 5px;
+    border-style: none;
+}
+
+
+.BckBtn i {
+    text-decoration: none;
+    color: #363853;
+    background-color: none;
+}
+
+.AddBtn {
+    cursor: pointer;
+    background-color: #363853;
+    font-size: 0.9em;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+    transition: 0.4s ease;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.AddBtn:hover, #confirmbtn:hover {
+    background-color: #404bda;
+}
+
+
+
+.AddMember {
+    color: #f9f9fa;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.cardbody {
+    margin: 20px;
+    padding: 20px;
+    align-self: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+h2 {
+    color: #272944;
+}
+
+.progress-circular {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: conic-gradient(#f9f9fa 0deg, #272944 0deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.315);
+}
+
+.progress-circular::after {
+    position: absolute;
+    content: '';
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background: #363853;
+    box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.253);
+}
+
+.value {
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    color: #f9f9fa;
+    z-index: 9;
+    border: transparent;
+    border-color: transparent; 
+    background-color: transparent;
+}
+
+.profname {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+}
+
+
+.profname label{
+    display: flex;
+    font-weight: 800px;
+}
+
+#group_id {
+    border: transparent;
+    background-color: transparent;n;
+}
+
+
+
+.content-table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #272944;
+    color: #f9f9fa;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    text-align: center;
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #f9f9fa;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #9a9cb1;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #363853;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+}
+
+.editupdbtn, .editdelbtn{
+    text-decoration: none;
+    cursor: pointer;
+    color: #f9f9fa;
+    background-color: #363853;
+    font-size: 0.9em;
+    height: fit-content;
+    padding: 3px;
+    border-radius: 5px;
+    border-style: none;
+    transition: 0.4s ease;
+}
+
+.formconfirm {
+    display: flex;
+    position: relative;
+}
+
+#confirmbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 30vh;
+    border: none;
+    outline: none;
+    color: #f9f9fa;
+    border-radius: 5px;
+    background-color: #363853;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.editupdbtn a, .editdelbtn a {
+    text-decoration: none;
+    color: #f9f9fa;
+}

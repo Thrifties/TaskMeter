@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+@keyframes show {
+	0%, 49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+	
+	50%, 100% {
+		opacity: 1;
+		z-index: 5;
+	}
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+h3 span { 
+    background:#f9f9fa; 
+    padding:0 10px; 
+}
+
+a {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+
+#logo {
+	margin:3% 2% ;	
+}
+
+
+#logocontainer{
+	position:absolute;
+	z-index: 100;
+	
+}
+
+
+#signinlog1-body {
+	background: #f9f9fa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -10px 0 50px;
+}
+
+#signinlog1-h1{
+	font-weight: bold;
+	font-size: 30px;
+	margin: 0;
+	padding-top: 2%;
+	padding-left: 2%;
+	margin: -20px 10px 10px 10px;
+	text-align: center;
+}
+
+#signinlog1-p{
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 0;
+}
+
+#signinlog1-span {
+	font-size: 12px;
+}
+
+
+#signinlog1-h3{
+	width: 100%; 
+   	text-align: center; 
+   	border-bottom: 1px solid #363853; 
+   	line-height: 0.1em;
+   	margin: 10px 0 20px; 
+}
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+
+/*<--signuplog1.html-->*/
+
+#signuplog1-body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -10px 0 50px;
+}
+
+#signuplog1-h1{
+
+
+	font-weight: bold;
+	font-size: 30px;
+	margin: 0;
+	padding-top: 2%;
+	padding-left: 2%;
+	margin: -20px 10px 10px 10px;
+	text-align: center;
+}
+
+#signuplog1-p{
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 0;
+}
+
+.WhiteBox #signuplog1-h1, .WhiteBox #signuplog1-p {
+	color: #363853;
+}
+
+.GradeBox #signuplog1-h1, .GradeBox #signuplog1-p {
+	color: #f9f9fa;
+}
+
+#signuplog1-span {
+	color: #363853;
+	font-size: 12px;
+}
+
+
+#signuplog1-h3{
+	color: #363853;
+	width: 100%; 
+   	text-align: center; 
+   	border-bottom: 1px solid #363853; 
+   	line-height: 0.1em;
+   	margin: 10px 0 20px; 
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------*/
+
+button {
+	border-radius: 20px;
+	border: 1px solid #363853;
+	background-color: #363853;
+	color: #f9f9fa;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+button.ghost {
+	background-color: transparent;
+	border-color: #f9f9fa;
+	margin-top: 20px;
+}
+
+#sign-inBtn {
+	margin-top: 20px;
+}
+
+form {
+	background-color: #f9f9fa;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+input {
+	background-color: #bebec7;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+	border-radius: 5px;
+}
+
+
+.container {
+	background-color: #f9f9fa;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 700px;
+}
+
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 80%;
+	transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+	margin-top: 8%;
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+.container.right-panel-active .sign-in-container {
+	transform: translateX(100%);
+}
+
+.sign-up-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	left: 0;
+	height:100%;
+	width: 50%;
+	opacity: 0;
+	z-index: 1;
+}
+
+#SignUpbtn {
+	margin-top: 20px;
+}
+
+.container.right-panel-active .sign-up-container {
+	transform: translateX(100%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.6s;
+}
+
+
+
+.overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.6s ease-in-out;
+	z-index: 100;
+}
+
+.container.right-panel-active .overlay-container{
+	transform: translateX(-100%);
+}
+
+.overlay {
+	background: #363853;
+	background: -webkit-linear-gradient(to right, #2b5876, #4e4376);
+	background: linear-gradient(to right, #2b5876, #4e4376);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: #f9f9fa;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+  	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay {
+  	transform: translateX(50%);
+}
+
+.overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+	transform: translateX(-20%);
+}
+
+.container.right-panel-active .overlay-left {
+	transform: translateX(0);
+}
+
+.overlay-right {
+	right: 0;
+	transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+	transform: translateX(20%);
+}
+
+.social-container {
+	margin: 20px 0;
+}
+
+.social-container a {
+	border: 1px solid #f9f9fa;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	height: 40px;
+	width: 40px;
+}
+
+.in_up_labels {
+	display: flex;
+	position: relative;
+	align-self: flex-start;
+
+	font-weight: 600;
+	font-size: 15px;
+}

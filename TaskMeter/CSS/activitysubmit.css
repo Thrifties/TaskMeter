@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 60vh;
+    background-color: #f5f8ff;
+    margin: 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.cardheader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 20px 20px 15px;
+}
+
+.bckbtn,.sbmtbtn 
+{
+    width: fit-content;
+}
+
+#bckbtn, #sbmtbtn
+{
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+    border-style: none;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+#bckbtn {
+    background-color: #f9f9fa;
+}
+
+#sbmtbtn 
+{
+    padding: 3px 20px;
+    background-color: #272944;
+}
+
+.sbmtbtn a
+{
+    font-size: 12pt;
+    color: #f9f9fa;
+}
+
+#bckbtn a
+{
+    font-weight: 800;
+    font-size: 14pt;
+    color: #272944;
+}
+
+#bckbtn i
+{
+    display: flex;
+    position: relative;
+    top: 2px;
+    font-weight: 600;
+    font-size: 20pt;
+    color: #272944;
+}
+
+#sbmtbtn:hover
+{
+    background-color: #404bda ;
+}
+
+.cardbody
+{
+    margin: 0px 20px;
+}
+
+.activityDeadline {
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+.activityFile
+{
+    font-size: 16px;
+    position: relative;
+    top: 20px;
+    color: #272944;
+}
+
+
+
+#actName {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+input[type="text"] {
+    font-size: 16px;
+    width: fit-content;
+    display: flex;
+    color: #272944;
+    border: transparent;
+    border-color: transparent;
+    background-color: transparent;
+}
